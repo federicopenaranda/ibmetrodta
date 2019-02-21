@@ -1,0 +1,5 @@
+Ejecutar en base ibmetro:
+
+ALTER TABLE  `usuario_00_01_01` ADD  `empresa_usuario` TEXT NULL ;
+
+

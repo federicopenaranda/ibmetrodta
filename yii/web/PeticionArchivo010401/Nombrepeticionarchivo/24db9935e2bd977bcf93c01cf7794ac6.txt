@@ -1,0 +1,12 @@
+Sistema Checklist
+- reporte de histórico de actividades
+- mostrar comentario en lista de tareas
+- Resumen de tareas agrupadas por usuario (solo % de avance)
+
+
+
+
+
+-----------------------
+- poner en título de tareas el mes y de quien son las actividades
+- listado de las tareas del mes, de todos los usuarios

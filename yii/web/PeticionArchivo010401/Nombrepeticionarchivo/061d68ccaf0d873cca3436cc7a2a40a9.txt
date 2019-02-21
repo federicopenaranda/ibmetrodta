@@ -1,0 +1,11 @@
+INSERT INTO  `ibmetrodta`.`accion_notificacion_01_02_03` (
+`id_accion_notificacion` ,
+`fk_id_accion` ,
+`fk_id_usuario_tipo` ,
+`asunto_accion_notificacion` ,
+`mensaje_accion_notificacion`
+)
+VALUES (
+NULL ,  '7',  '5',  '[IBMETRO] Acta de Consejo Cargada', 'Se ha cargado en el sistema el Acta de Consejo para el trámite: [codigo_tramite], en el Paso 3.'
+);
+

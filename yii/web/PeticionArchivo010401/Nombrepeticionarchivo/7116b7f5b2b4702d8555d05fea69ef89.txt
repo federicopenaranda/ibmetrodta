@@ -1,0 +1,6 @@
+Objetivos Santillana:
+- Generar Reportes gerenciales en tiempo real.
+- Automatizar la mayor cantidad de tareas de IT
+- Mantener soporte a usuarios en mejor nivel
+- Documentar la mayoria de los procesos de IT
+- Mejorar observaciones de auditorias

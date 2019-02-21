@@ -1,0 +1,114 @@
+- Caso de nota de crédito que no la muestra en el reporte de SCZ
+
+- Pedir cotizaciones de switchs cisco
+- Pedir cotización a DIMA (servidores y switch)
+
+- Cotizar equipos para LifeSize: 
+	- Monitor con HDMI (1080p, 27" minimo)
+	- Pedestal (para cámara y pantalla)
+	- Cámara web (Logitech ConferenceCam Connect Video Conferencing, o, Logitech BCC950 Webcam and Speakerphone)
+
+- Revisar licencias de usuarios Navision
+
+
+
+
+Juan Carlos
++ Casos especiales de liquidación de movimientos (lo revisará Juan Carlos)
++ Packing (lo revisará Juan Carlos)
++ Reporte de ppto vs ejecutado
+- Revisar error de Carmen
+
+
+
+- Consultar migración de SQL Server (consultar a México)
+- Reporte de ppto contab. vs ejecutado
+
+
+Pendientes DSPOS:
+- bloqueo de facturación cuando dosif. manual vencida
+- cupones únicos por colegio, en vez de que sean varios
+
+
+- Actualizar servidores según correo de Miguel Ángel
+- Bajar y leer documentación de LifeSize Cloud (en Sistemas Latam)
+- Reunión con Omar Baez para revisión de Backup de servidores
+- Instalar equipo virtual para eliminar equipo SBONAVSQL00
+- Cotizar con INTEL una tarjeta de red para servidor DELL
+
+- Reunión con Patricia para organizar sig campaña
+
+
+Personales+++++++++++++++++++++++++++++++
+- Video ITIL
+- Modificaciones Ibmetro
+- Resumir deudas a Fede
+
+- Revisar faltantes de San José
+- Ordenar libros
+- Ordenar links
+- Organizar ITIL
+- Subir código a GitHub
+- Ver videos de Stefan daowoijew
++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+======================================================
+- Hacer seguimiento a caso de laptop Courrier
+- Arreglar con Asthir factura con inventario insuficiente 6/6
+- Reportar errores de DSPOS (orden de facturas y reporte de Ventas sin num de factura)
++ Revisar y dar acceso a equipo virtual DSPOS
+- Reunión con Jimmy Salamanca para revisión de servidores
++ Revisar casos de Asthir
+- Reportar errores de liquidación en clientes
+- Hacer reporte de liquidaciones pendientes
+- Inactivar los items que mandó Carmen
+- Cambiar término de pago a clientes a 7 días
+- Revisar items con líneas de negocio bloqueadas
+E Liquidar manualmente los casos especiales
++ Reunión con Simeón para cargar Presupuestos
++ Revisar caso de item equivocado de Tarija  (vendio en POS IF-000431 y en sistema IF-000240)  Isidro haciendo trasp.
+E Eliminar botón de cambio de precio en todas las tiendas
+- Confirmar con Juan Carlos la creación de líneas de negocio de Norma
+- Definir empresa para Cableado de Cochabamba
+- Luego de registrar la venta de santa cruz (VFSCZ-035147) volver a inactivar el item IF-000541
++ Averiguar como añadir NORMA a items y contabilidad (correo a Juan Carlos)
+- Hacer correr costeo para probar resolución de error en item con error
+* Unir reportes utilizados y pasar a Patricia
+- Corregir caso pendiente de cochabamba
+E Reunión con Elvis para documentar servicios
+- Consultar a Juan Carlos sobre carga de presupuesto con Simeón
++ Crear cuenta de Microsoft Licencing Volume y descargar Windows Server (tambien consultar licencias disponibles) Jueves a Edgar
+- Continuar con configuración de DSPOS Modelo
+- Generar reporte de ventas de feria SCZ 2016 y 2017 para Raúl
+* Cambiar plazo de crédito a 1 día
+- Llamar a HP a ver si nos pueden dar soporte directo (800110348)
+- Sacar reporte de clientes de más de 3 años sin movimientos y mandar a carmen y patricia
++ Descargar Windows Server 2012 para equipo pasarela
+- Eliminar cuenta de Dynasoft con problemas y crear otra
+- Volver a poner dimensiones bloqueadas
+- Verificar reporte de Resumen del día y orden de facturas Lib. Arce
+- Revisar Notas de credito eliminadas
++ Hacer eliminar notas de credito y facturas antiguas en servidor (las eliminará Hamlet)
+- Continuar Backup de SBOFS01
+- Hacer Flash consolidado
+- Monitorear campos lastLogon y pwdLastSet (para auditoría)
++ Resolver problema de almacén villa fátima
+- Caso de Santa Cruz
+- Errores al liquidar mov. de Clientes
+- Creación de libros Norma (correo de Simeón)
+- PPTO de venta por cliente x libro ?
+- Cambió el precio de un producto
+- Cambio de precio de venta en DSPOS
+- Carga de presupuesto de venta
++ Poner "Fuera de Oficina" a Carola
+- error en pedidos
+- cual campo es el descuento por pronto pago (revisar query)
+- Completar direcciones y colonia de almacenes
+- Terminar de presentar auditoría 2do trimestre 2017

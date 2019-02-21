@@ -1,0 +1,12 @@
+Para Victor:
+
+1) No devuelve bien el campo "peticionAccion010301s", no devuelve los archivos cargados.
+
+http://192.168.100.102/ibmetrodta/yii/web/index.php/peticion010401/verifState?id_peticion=6&nombre_estado=formulario-002-llenado&_dc=1451467220293&callback=Ext.data.JsonP.callback20
+
+Ext.data.JsonP.callback20({"registros":{"activo_peticion_estado":1,"nombre_estado":"formulario-002-llenado","peticionAccion010301s":[{"completa_peticion_accion":"1","activa_peticion_accion":"0","observacion_peticion_accion":"","nombre_accion":"carga-cotizacion-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"carga-factura-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"verifica-factura-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"aprueba-da-cotizacion-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"1","activa_peticion_accion":"0","observacion_peticion_accion":"","nombre_accion":"carga-cotizacion-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"carga-factura-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"verifica-factura-pertinencia-alcance","peticionArchivo010401s":[]},{"completa_peticion_accion":"0","activa_peticion_accion":"1","observacion_peticion_accion":"","nombre_accion":"aprueba-da-cotizacion-pertinencia-alcance","peticionArchivo010401s":[]}],"usuarioTipo000201":[{"id_usuario_tipo":1,"nombre_usuario_tipo":"admin","descripcion_usuario_tipo":"Administrador"}]}});
+
+
+
+
+2) Hacer una acción que devuelva el estado en el que está la petición. Si es que no hay ya.

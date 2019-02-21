@@ -1,0 +1,12 @@
+- Hacer carta de hosting a ibmetro
+- Hacer mofificaciones a sistema de inbolsa
+- Hacer sistema de Santillana
+- Reunión con Paulo para carga de sistema localmente
+
+
+
+===============================
+- Enviar URL a paulo para que descargue XAMPP
+- Hacer correcciones y pruebas a sistema de IBMETRO
+- Enviar a paulo el último master PIKE y Lecesse
+- Revisar evaluaciones enviadas por Paulo

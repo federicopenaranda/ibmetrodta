@@ -1,0 +1,1 @@
+1) No pone los estados en 0 cuando se crea un nuevo estado, todos los estados de una petición estan activos.

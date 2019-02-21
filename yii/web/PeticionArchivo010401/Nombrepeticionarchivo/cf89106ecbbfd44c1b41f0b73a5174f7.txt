@@ -1,0 +1,30 @@
+ALTER TABLE  `eval_tecnica_04_08_01` CHANGE  `hora_inicio_eval_tecnica`  `hora_inicio_eval_tecnica` TIME NULL DEFAULT NULL ;
+
+
+
+
+actualizar modelo de 
+
+/var/www/html/ibmetrodta/yii/models/EvalTecnica040801.php
+
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `ibmetrodta`.`alcance_acreditacion_lab_04_13_03` (
+  `id_alcance_acreditacion_lab` INT NOT NULL AUTO_INCREMENT COMMENT 'evaluacion',
+  `fk_id_anexo_convenio` INT NOT NULL COMMENT '',
+  `descripcion_ensayo_alcance_acreditacion_lab` TEXT NULL COMMENT '',
+  `metodo_ensayo_alcance_acreditacion_lab` TEXT NULL COMMENT '',
+  `rango_medicion_alcance_acreditacion_lab` TEXT NULL COMMENT '',
+  `incertidumbre_alcance_acreditacion_lab` TEXT NULL COMMENT '',
+  PRIMARY KEY (`id_alcance_acreditacion_lab`)  COMMENT '',
+  INDEX `fk_alcance_acreditacion_lab_04_13_03_anexo_convenio_04_13_0_idx` (`fk_id_anexo_convenio` ASC)  COMMENT '',
+  CONSTRAINT `fk_alcance_acreditacion_lab_04_13_03_anexo_convenio_04_13_011`
+    FOREIGN KEY (`fk_id_anexo_convenio`)
+    REFERENCES `ibmetrodta`.`anexo_convenio_04_13_01` (`id_anexo_convenio`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB

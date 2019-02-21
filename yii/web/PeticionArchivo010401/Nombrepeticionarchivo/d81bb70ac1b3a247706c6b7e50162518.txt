@@ -1,0 +1,21 @@
+INSERT INTO  `ibmetrodta`.`accion_observacion_01_02_03` (
+`id_accion_observacion` ,
+`fk_id_accion` ,
+`fk_id_usuario_tipo` ,
+`asunto_accion_observacion`
+)
+VALUES 
+(NULL ,  '53',  '2',  '[Paso 11] Observaciones'), 
+(NULL ,  '53',  '5',  '[Paso 11] Observaciones'),
+
+(NULL ,  '79',  '2',  '[Paso 11] Observaciones'), 
+(NULL ,  '79',  '5',  '[Paso 11] Observaciones'),
+
+(NULL ,  '110',  '2',  '[Paso 11] Observaciones'), 
+(NULL ,  '110',  '5',  '[Paso 11] Observaciones'),
+
+(NULL ,  '137',  '2',  '[Paso 11] Observaciones'), 
+(NULL ,  '137',  '5',  '[Paso 11] Observaciones'),
+
+(NULL ,  '168',  '2',  '[Paso 11] Observaciones'), 
+(NULL ,  '168',  '5',  '[Paso 11] Observaciones');

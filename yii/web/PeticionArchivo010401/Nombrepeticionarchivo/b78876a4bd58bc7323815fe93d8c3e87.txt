@@ -1,0 +1,19 @@
+- Hacer sistema de paulo e importar subcontratistas
+- Llenado de tablas de notificación de ibmetro
+- avanzar con sistema ibmetro
+- arreglar evaluacion subcontratista rené
+
+- Avanzar con trabajo de Yotta
+- Leer algo de Yii2
+
+
+
+
+=========================================
+- Sucontratistas de paulo
+- Redirección de correo de Yotta
+- diseño de base de datos de Sachin
+- Informe de san jose por modificaciones separado
+- Tarjeta de navidad confie
+- Instalar SQL Server 2014 en laptop Acer
+- Hacer sistema ibmetro

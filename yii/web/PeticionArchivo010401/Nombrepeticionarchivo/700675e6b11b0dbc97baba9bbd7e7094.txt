@@ -1,0 +1,19 @@
+Juan Carlos
++ Casos especiales de liquidación de movimientos (lo revisará Juan Carlos)
+
+
+Tareas:
+- cargar aplicación de presupuesto en servidor para que la vea juan carlos
+
+
+
+
+
+=======================================
++ Packing (lo revisará Juan Carlos) --> lo estan trabajando
++ Reportes de ppto vs ejecutado  (cargar aplicación en servidor para que la vea juan carlos)
+- Easy Security
+- Error en facturas DSPOS
+- Validar cambios a Libro Mayor Resumido con ultimos cambios
+- Cargar licencia de Nav que mandó juan carlos (preguntar si la licencia es también para DSPOS)
+- Actualizar dspos modelo con nuevos objetos y cargar licencia

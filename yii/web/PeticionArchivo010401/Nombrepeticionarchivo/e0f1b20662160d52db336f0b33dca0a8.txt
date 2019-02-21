@@ -1,0 +1,71 @@
+            switch ( $models['objetivo_info_ensayo'] )
+            {
+                case 'acreditacion_inicial': $models['objetivo_info_ensayo'] = 'Acreditaci&oacute;n Inicial';
+                    break;
+                
+                case 'reacreditacion': $models['objetivo_info_ensayo'] = 'Reacreditaci&oacute;n';
+                    break;
+                
+                case 'extension_acreditacion': $models['objetivo_info_ensayo'] = 'Extensi&oacute;n de Acreditaci&oacute;n';
+                    break;
+                
+                default: $models['objetivo_info_ensayo'] = '[ERROR AL FORMATEAR CAMPO]';
+                    break;
+            }
+
+
+            
+            switch ( $models['tipo_servicio_info_ensayo'] )
+            {
+                case 'eil': $models['tipo_servicio_info_ensayo'] = 'Realizado en las instalaciones del laboratorio';
+                    break;
+                
+                case 'elm': $models['tipo_servicio_info_ensayo'] = 'Realizado en laboratorio movil';
+                    break;
+                
+                case 'fl': $models['tipo_servicio_info_ensayo'] = 'Realizado fuera de laboratorio';
+                    break;
+                
+                default: $models['tipo_servicio_info_ensayo'] = '[ERROR AL FORMATEAR CAMPO]';
+                    break;
+            }
+
+
+
+            switch ( $models['categoria_info_ensayo'] )
+            {
+                case 'i': $models['categoria_info_ensayo'] = 'I (Ensayo Cualitativo)';
+                    break;
+                
+                case 'ii': $models['categoria_info_ensayo'] = 'II (Ensayo Normalizado)';
+                    break;
+                
+                case 'iii': $models['categoria_info_ensayo'] = 'III (Ensayo Normalizado)';
+                    break;
+                
+                case 'iv': $models['categoria_info_ensayo'] = 'IV (Ensayo No Normalizado)';
+                    break;
+                
+                case 'na': $models['categoria_info_ensayo'] = 'No Aplica';
+                    break;
+                
+                default: $models['categoria_info_ensayo'] = '[ERROR AL FORMATEAR CAMPO]';
+                    break;
+            }
+            
+
+
+
+
+
+            $models['pesonal_autorizado_info_ensayo'] = str_replace("\n", "<p></p>", $models['pesonal_autorizado_info_ensayo']);
+
+
+
+
+
+SET('lab-ibmetro', 'lab-rec-ibmetro', 'lab-acred-dta', 'lab-otros-inm', 'lab-acred-ona', 'solucion-dta-oec')
+
+
+
+
