@@ -17,7 +17,6 @@ Ext.define('ibmetrodta.Application', {
 
         //globalServerFilePath: 'http://localhost:8080/ibmetrodta/yii/web/',
         //globalServerPath: 'http://localhost:8080/ibmetrodta/yii/web/index.php/'
-        
     },
     requires: [
         'Ext.data.Store',
