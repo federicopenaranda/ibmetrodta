@@ -93,14 +93,14 @@ Ext.define('ibmetrodta.view.formularios.AnexoConvenio.Lista', {
                             itemId: 'delete',
                             iconCls: 'icon_delete',
                             text: 'Eliminar'
-                        }/*, '->',
+                        }, '->',
                         {
                             xtype: 'button',
                             //hidden: me.privilegio('evaluacion.delete'),
                             itemId: 'descargaForm',
                             iconCls: 'icon_reporte',
                             text: 'Descargar PDF'
-                        }*/
+                        }
                     ]
                 },
                 {

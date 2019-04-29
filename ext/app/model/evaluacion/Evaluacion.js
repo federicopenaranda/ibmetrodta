@@ -35,11 +35,13 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'fecha_inicio_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
             name: 'fecha_fin_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
@@ -60,6 +62,7 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'fecha_reunion_inicial_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
@@ -70,6 +73,7 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'fecha_reunion_ee_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
@@ -80,6 +84,7 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'fecha_reunion_final_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
@@ -115,6 +120,7 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'recomendacion_fecha_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {
@@ -125,6 +131,7 @@ Ext.define('ibmetrodta.model.evaluacion.Evaluacion', {
         {
             name: 'decision_fecha_da_evaluacion',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {

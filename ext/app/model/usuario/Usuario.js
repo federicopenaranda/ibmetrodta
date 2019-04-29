@@ -45,6 +45,7 @@ Ext.define('ibmetrodta.model.usuario.Usuario', {
         {
             name: 'fecha_nacimiento_usuario',
             type: 'date',
+            dateFormat: 'Y-m-d',
             useNull: true
         },
         {

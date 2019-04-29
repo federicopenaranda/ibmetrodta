@@ -16,7 +16,7 @@
                     var data = $( "#login_form" ).serialize();
                     $.ajax({
                         //url: "http://200.105.158.70/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,
-                        url: "http://192.168.0.103/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,
+                        url: "http://192.168.0.115/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,
                         //url: "http://192.168.100.150/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,
                         //url: "http://192.168.2.42/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,
                         //url: "http://srv.ibmetro.gob.bo:9087/ibmetrodta/yii/web/index.php/usuario000101/login?" + data,

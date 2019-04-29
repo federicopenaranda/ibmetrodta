@@ -1,3 +1,8 @@
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+</head>
+
 <div align="center"><strong>INFORMACIÓN  DEL ORGANISMO ACREDITADO</strong> </div>
 
 <table border="1" cellspacing="0" cellpadding="0">
@@ -13,7 +18,7 @@
   </tr>
 </table>
 <br />
-<div align="center"><strong>INFORMACIÓN  DEL ORGANISMO DE EVALUACIÒN DE LA CONFORMIDAD</strong> </div>
+<div align="center"><strong>INFORMACIÓN  DEL ORGANISMO DE EVALUACIÓN DE LA CONFORMIDAD</strong> </div>
 <table border="1" cellspacing="0" cellpadding="0">
   <tr>
     <td width="217" valign="top" style="background-color: #E6E6E6;background-repeat: repeat-x;"><p><strong>NOMBRE DEL ORGANISMO</strong></p></td>
@@ -88,7 +93,7 @@
   </tr>
   <tr>
     <td width="293" style="background-color: #E6E6E6;background-repeat: repeat-x;"><p>Fecha y hora reunión del equipo evaluador</p></td>
-    <td width="350"><p>&nbsp;<?= $eval->fecha_reunion_ee_evaluacion?>." ".hora_reunion_ee_evaluacion </p></td>
+    <td width="350"><p>&nbsp;<?= $eval->fecha_reunion_ee_evaluacion ." ". $eval->hora_reunion_ee_evaluacion ?></p></td>
   </tr>
   <tr>
     <td width="293" style="background-color: #E6E6E6;background-repeat: repeat-x;"><p>Fecha y hora reunión    final</p></td>
@@ -124,6 +129,16 @@
   </tr>
 </table>
 <br />
+
+
+
+
+  <tr>
+    <td><p><?php $equipo[0]->fkIdUsuario->primer_nombre_usuario ?></p></td>
+  </tr>
+
+
+
 <table border="1" cellspacing="0" cellpadding="0" width="643">
   <tr>
     <td width="643" colspan="3" style="background-color: #E6E6E6;background-repeat: repeat-x;"><p><strong>EQUIPO EVALUADOR</strong></p></td>
@@ -133,41 +148,15 @@
     <td width="330" ><p align="center"><strong>Nombre</strong></p></td>
     <td width="161" ><p align="center"><strong>Código DTA</strong></p></td>
   </tr>
-  <tr>
-    <td width="152" ><p>Evaluador Líder</p></td>
-    <td width="330"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161"><p>&nbsp;&nbsp; </p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Evaluador Técnico 1</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Evaluador Técnico 2</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp;&nbsp; </p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Experto Técnico 1:</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp;&nbsp; </p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Experto Técnico 2:</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp; </p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Observador 1</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td width="152" ><p>Observador 2</p></td>
-    <td width="330" ><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-    <td width="161" ><p>&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
-  </tr>
+
+  <?php for ( $i=0; $i<sizeof($equipo); $i++ ) { ?>
+    <tr>
+      <td width="152"><p><?php echo $equipo[$i]->observaciones_equipo_peticion ?></p></td>
+      <td width="330"><p> <?php echo $equipo[$i]->fkIdUsuario->primer_nombre_usuario . ' ' . $equipo[$i]->fkIdUsuario->segundo_nombre_usuario . ' ' . $equipo[$i]->fkIdUsuario->apellido_paterno_usuario . ' ' . $equipo[$i]->fkIdUsuario->apellido_materno_usuario ?> </p></td>
+      <td width="161"><p> <?php echo $equipo[$i]->fkIdUsuario->codigo_usuario ?> </p></td>
+    </tr>
+  <?php } ?>
+
   <tr>
     <td width="643" colspan="3"><p>Todos los    evaluadores/expertos/observadores de la DTA firman un compromiso de    confidencialidad y un término de conflictos de interés, que tienen por finalidad    asegurar que sus actuaciones son imparciales y no discriminatorias.<br />
       Estos registros se encuentran en la DTA,    donde pueden ser consultados por nuestros clientes.</p></td>

@@ -5,7 +5,7 @@ Ext.define('ibmetrodta.store.Base', {
     ],
 
     //serverPath: 'http://sis.ibmetro.gob.bo:500/ibmetrodta/yii/web/index.php/',
-    serverPath: 'http://192.168.0.103/ibmetrodta/yii/web/index.php/',
+    serverPath: 'http://192.168.0.115/ibmetrodta/yii/web/index.php/',
     //serverPath: 'http://localhost:8080/ibmetrodta/yii/web/index.php/',
     
     restPath: null,

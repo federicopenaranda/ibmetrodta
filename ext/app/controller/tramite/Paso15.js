@@ -107,17 +107,17 @@ Ext.define('ibmetrodta.controller.tramite.Paso15', {
         else
         {
             rec = store.getAt(index);
-            rec.set('necesidad_comite_peticion', newValue);
+            rec.set('necesidad_comite_peticion', newValue[0].data.valor);
             store.sync();
             
-            if ( newValue == 0 )
+            // NO es necesario el Comité Técnico (valor 0)
+            if ( newValue[0].data.valor == 0 )
             {
                 me.terminaAccion(dataPeticion.id_peticion, 'aprobacion-ra-tramite-comite-tecnico');
                 me.terminaAccion(dataPeticion.id_peticion, 'carga-acta-comite-tecnico');
                 me.terminaAccion(dataPeticion.id_peticion, 'aprobacion-da-tramite-comite-tecnico');
-                
-                combo.setDisabled(true);
             }
+            // SI es necesario el Comité Técnico (valor 1)
             else
             {
                 console.log('[TODO] SI para comite técnico');
@@ -185,28 +185,28 @@ Ext.define('ibmetrodta.controller.tramite.Paso15', {
     
     configPanelPaso: function () {
         var me = this,
-                gridPeticion = me.getTramiteListaPeticion(),
-                recPeticion = gridPeticion.getSelectionModel().getSelection()[0],
-                dataPeticion = recPeticion.getData(),
-        
-                storeTramite = me.getProcesoPeticionStore(),
-                filters = [],
-                
-                
-                // Botones
-                Paso15BotonAbreFormulario050 = me.getPaso15BotonAbreFormulario050(),
-                Paso15BotonFinalizaFormulario050 = me.getPaso15BotonFinalizaFormulario050(),
-                NecesidadComiteField = me.getNecesidadComiteField(),
-                        
-                Paso15TextEstado = me.getPaso15TextEstado(),
-                
-                // Layout
-                form = me.getTramiteForm().down(),
-                layout = form.getLayout(),
-                antPasoBtn = me.getTramiteAnteriorPasoBoton(),
-                sigPasoBtn = me.getTramiteSiguientePasoBoton(),
-                
-                accion, estado, peticion;
+            gridPeticion = me.getTramiteListaPeticion(),
+            recPeticion = gridPeticion.getSelectionModel().getSelection()[0],
+            dataPeticion = recPeticion.getData(),
+
+            storeTramite = me.getProcesoPeticionStore(),
+            filters = [],
+            
+            
+            // Botones
+            Paso15BotonAbreFormulario050 = me.getPaso15BotonAbreFormulario050(),
+            Paso15BotonFinalizaFormulario050 = me.getPaso15BotonFinalizaFormulario050(),
+            NecesidadComiteField = me.getNecesidadComiteField(),
+                    
+            Paso15TextEstado = me.getPaso15TextEstado(),
+            
+            // Layout
+            form = me.getTramiteForm().down(),
+            layout = form.getLayout(),
+            antPasoBtn = me.getTramiteAnteriorPasoBoton(),
+            sigPasoBtn = me.getTramiteSiguientePasoBoton(),
+            
+            accion, estado, peticion;
         
                 
         storeTramite.clearFilter();
@@ -305,7 +305,8 @@ Ext.define('ibmetrodta.controller.tramite.Paso15', {
                             /// Accion termina-carga-formulario-011-012
                             if ( accionesArray['termina-carga-formulario-050'] == '0' )
                             {
-                                //NecesidadComiteField.setDisabled(true);
+                                console.log('paso no finalizado');
+                                NecesidadComiteField.setDisabled(false);
                                 if ( dta == 1 || admin == 1 || da == 1 )
                                 {
                                     Paso15BotonAbreFormulario050.setDisabled(false);
@@ -319,8 +320,9 @@ Ext.define('ibmetrodta.controller.tramite.Paso15', {
                             }
                             else
                             {
+                                console.log('paso finalizado');
                                 Paso15BotonFinalizaFormulario050.setDisabled(true);
-                                //NecesidadComiteField.setDisabled(false);
+                                NecesidadComiteField.setDisabled(true);
                                 sigPasoBtn.setDisabled(false);
                                 me.accionTerminada  = 1;
                                 

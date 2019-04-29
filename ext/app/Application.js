@@ -12,8 +12,8 @@ Ext.define('ibmetrodta.Application', {
         //globalServerFilePath: 'http://sis.ibmetro.gob.bo:500/ibmetrodta/yii/web/',
         //globalServerPath: 'http://sis.ibmetro.gob.bo:500/ibmetrodta/yii/web/index.php/'
 
-        globalServerFilePath: 'http://192.168.0.103/ibmetrodta/yii/web/',
-        globalServerPath: 'http://192.168.0.103/ibmetrodta/yii/web/index.php/'
+        globalServerFilePath: 'http://192.168.0.115/ibmetrodta/yii/web/',
+        globalServerPath: 'http://192.168.0.115/ibmetrodta/yii/web/index.php/'
 
         //globalServerFilePath: 'http://localhost:8080/ibmetrodta/yii/web/',
         //globalServerPath: 'http://localhost:8080/ibmetrodta/yii/web/index.php/'

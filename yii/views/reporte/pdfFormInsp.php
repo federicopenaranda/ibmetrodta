@@ -109,8 +109,7 @@
             <br>
             <table width="364" align="center">
                 <tr>
-                    <!-- http://sis.ibmetro.gob.bo:500/ibmetrodta/yii/web/images/img2.php?correlativo -->
-                    <td><img src="http://192.168.0.103/ibmetrodta/yii/web/images/img2.php?correlativo=<?= $correlativo; ?>&tipo=<?= $oec->fkIdOecTipo->codigo_oec_tipo ?>" width="150" height="150"></td>
+                    <td><img src="http://sis.ibmetro.gob.bo:500/ibmetrodta/yii/web/images/img2.php?correlativo=<?= $correlativo; ?>&tipo=<?= $oec->fkIdOecTipo->codigo_oec_tipo ?>" width="150" height="150"></td>
                     <td><img src="images/logo.jpg" width="130" height="130"/><br /><strong style="letter-spacing:1px;">ACREDITACION</strong></td>
                 </tr>
             </table>
