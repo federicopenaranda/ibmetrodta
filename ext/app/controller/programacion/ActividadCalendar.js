@@ -53,10 +53,7 @@ Ext.define('ibmetrodta.controller.programacion.ActividadCalendar', {
         var me = this,
                 cal = me.getCalendario(),
                 store = cal.eventStore;
-        
-        console.log('load records cal');
-        console.log(store);
-        
+       
         store.load();
     },
 
